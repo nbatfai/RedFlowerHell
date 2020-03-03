@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Mission xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <About>
+        <Summary>NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena</Summary>
+        <Description>The aim of the first challenge, called nb4tf4i's red flowers, is to collect as many red flowers as possible before the lava flows down the hillside.</Description>
+    </About>
+    <ServerSection>
+        <ServerInitialConditions>
+            <Time><StartTime>1</StartTime></Time>
+            </ServerInitialConditions>
+            <ServerHandlers>
+                <FlatWorldGenerator generatorString="3;1*minecraft:bedrock,60*minecraft:dirt,1*minecraft:lava;2;village"/>
+                <DrawingDecorator>
+                    <DrawCuboid x1="0" y1="2" z1="0" x2="0" y2="3" z2="0" type="lava" />                    
+                    <DrawCuboid x1="-4" y1="3" z1="-4" x2="4" y2="110" z2="4" type="air" />
+                    <DrawCuboid x1="-6" y1="4" z1="-6" x2="6" y2="110" z2="6" type="air" />
+                    <DrawCuboid x1="-8" y1="5" z1="-8" x2="8" y2="110" z2="8" type="air" />
+                    <DrawCuboid x1="-10" y1="6" z1="-10" x2="10" y2="110" z2="10" type="air" />
+                    <DrawCuboid x1="-12" y1="7" z1="-12" x2="12" y2="110" z2="12" type="air" />
+                    <DrawCuboid x1="-14" y1="8" z1="-14" x2="14" y2="110" z2="14" type="air" />
+                    <DrawCuboid x1="-16" y1="9" z1="-16" x2="16" y2="110" z2="16" type="air" />
+                    <DrawCuboid x1="-18" y1="10" z1="-18" x2="18" y2="110" z2="18" type="air" />
+                    <DrawCuboid x1="-20" y1="11" z1="-20" x2="20" y2="110" z2="20" type="air" />
+                    <DrawCuboid x1="-22" y1="12" z1="-22" x2="22" y2="110" z2="22" type="air" />
+                    <DrawCuboid x1="-24" y1="13" z1="-24" x2="24" y2="110" z2="24" type="air" />
+                    <DrawCuboid x1="-26" y1="14" z1="-26" x2="26" y2="110" z2="26" type="air" />
+                    <DrawCuboid x1="-28" y1="15" z1="-28" x2="28" y2="110" z2="28" type="air" />
+                    <DrawCuboid x1="-30" y1="16" z1="-30" x2="30" y2="110" z2="30" type="air" />
+                    <DrawCuboid x1="-32" y1="17" z1="-32" x2="32" y2="110" z2="32" type="air" />
+                    <DrawCuboid x1="-34" y1="18" z1="-34" x2="34" y2="110" z2="34" type="air" />
+                    <DrawCuboid x1="-36" y1="19" z1="-36" x2="36" y2="110" z2="36" type="air" />
+                    <DrawCuboid x1="-38" y1="20" z1="-38" x2="38" y2="110" z2="38" type="air" />
+                    <DrawCuboid x1="-40" y1="21" z1="-40" x2="40" y2="110" z2="40" type="air" />
+                    <DrawCuboid x1="-42" y1="22" z1="-42" x2="42" y2="110" z2="42" type="air" />
+                    <DrawCuboid x1="-44" y1="23" z1="-44" x2="44" y2="110" z2="44" type="air" />
+                    <DrawCuboid x1="-46" y1="24" z1="-46" x2="46" y2="110" z2="46" type="air" />
+                    <DrawCuboid x1="-48" y1="25" z1="-48" x2="48" y2="110" z2="48" type="air" />
+                    <DrawCuboid x1="-50" y1="26" z1="-50" x2="50" y2="110" z2="50" type="air" />
+                    <DrawCuboid x1="-52" y1="27" z1="-52" x2="52" y2="110" z2="52" type="air" />
+                    <DrawCuboid x1="-54" y1="28" z1="-54" x2="54" y2="110" z2="54" type="air" />
+                    <DrawCuboid x1="-56" y1="29" z1="-56" x2="56" y2="110" z2="56" type="air" />
+                    <DrawCuboid x1="-58" y1="30" z1="-58" x2="58" y2="110" z2="58" type="air" />
+                    <DrawCuboid x1="-60" y1="31" z1="-60" x2="60" y2="110" z2="60" type="air" />
+                    <DrawCuboid x1="-62" y1="32" z1="-62" x2="62" y2="110" z2="62" type="air" />
+                    <DrawCuboid x1="-64" y1="33" z1="-64" x2="64" y2="110" z2="64" type="air" />
+                    <DrawCuboid x1="-66" y1="34" z1="-66" x2="66" y2="110" z2="66" type="air" />
+                    <DrawCuboid x1="-68" y1="35" z1="-68" x2="68" y2="110" z2="68" type="air" />
+                    <DrawCuboid x1="-70" y1="36" z1="-70" x2="70" y2="110" z2="70" type="air" />
+                    <DrawCuboid x1="-72" y1="37" z1="-72" x2="72" y2="110" z2="72" type="air" />
+                    <DrawCuboid x1="-74" y1="38" z1="-74" x2="74" y2="110" z2="74" type="air" />
+                    <DrawCuboid x1="-76" y1="39" z1="-76" x2="76" y2="110" z2="76" type="air" />
+                    <DrawCuboid x1="-78" y1="40" z1="-78" x2="78" y2="110" z2="78" type="air" />
+                    <DrawCuboid x1="-80" y1="41" z1="-80" x2="80" y2="110" z2="80" type="air" />
+                    <DrawCuboid x1="-82" y1="42" z1="-82" x2="82" y2="110" z2="82" type="air" />
+                    <DrawCuboid x1="-84" y1="43" z1="-84" x2="84" y2="110" z2="84" type="air" />
+                    <DrawCuboid x1="-86" y1="44" z1="-86" x2="86" y2="110" z2="86" type="air" />
+                    <DrawCuboid x1="-88" y1="45" z1="-88" x2="88" y2="110" z2="88" type="air" />
+                    <DrawCuboid x1="-90" y1="46" z1="-90" x2="90" y2="110" z2="90" type="air" />
+                    <DrawCuboid x1="-92" y1="47" z1="-92" x2="92" y2="110" z2="92" type="air" />
+                    <DrawCuboid x1="-94" y1="48" z1="-94" x2="94" y2="110" z2="94" type="air" />
+                    <DrawCuboid x1="-96" y1="49" z1="-96" x2="96" y2="110" z2="96" type="air" />
+                    <DrawCuboid x1="-98" y1="50" z1="-98" x2="98" y2="110" z2="98" type="air" />
+                    <DrawCuboid x1="-100" y1="51" z1="-100" x2="100" y2="110" z2="100" type="air" />
+                    <DrawCuboid x1="-102" y1="52" z1="-102" x2="102" y2="110" z2="102" type="air" />
+                    <DrawCuboid x1="-104" y1="53" z1="-104" x2="104" y2="110" z2="104" type="air" />
+                    <DrawCuboid x1="-106" y1="54" z1="-106" x2="106" y2="110" z2="106" type="air" />
+                    <DrawCuboid x1="-108" y1="55" z1="-108" x2="108" y2="110" z2="108" type="air" />
+                    <DrawCuboid x1="-110" y1="56" z1="-110" x2="110" y2="110" z2="110" type="air" />
+                    <DrawCuboid x1="-112" y1="57" z1="-112" x2="112" y2="110" z2="112" type="air" />
+                    <DrawCuboid x1="-114" y1="58" z1="-114" x2="114" y2="110" z2="114" type="air" />
+                    <DrawCuboid x1="-116" y1="59" z1="-116" x2="116" y2="110" z2="116" type="air" />
+                    <DrawCuboid x1="-118" y1="60" z1="-118" x2="118" y2="110" z2="118" type="air" />
+
+                    <DrawBlock x="2" y="3" z="4" type="red_flower" />
+                    <DrawBlock x="6" y="4" z="4" type="red_flower" />
+                    <DrawBlock x="-3" y="5" z="8" type="red_flower" />
+                    <DrawBlock x="-6" y="6" z="-10" type="red_flower" />
+                    <DrawBlock x="-11" y="7" z="12" type="red_flower" />
+                    <DrawBlock x="1" y="8" z="14" type="red_flower" />
+                    <DrawBlock x="-9" y="9" z="16" type="red_flower" />
+                    <DrawBlock x="-18" y="10" z="-13" type="red_flower" />
+                    <DrawBlock x="4" y="11" z="20" type="red_flower" />
+                    <DrawBlock x="-22" y="12" z="-22" type="red_flower" />
+                    <DrawBlock x="4" y="13" z="-24" type="red_flower" />
+                    <DrawBlock x="26" y="14" z="-15" type="red_flower" />
+                    <DrawBlock x="28" y="15" z="24" type="red_flower" />
+                    <DrawBlock x="14" y="16" z="30" type="red_flower" />
+                    <DrawBlock x="17" y="17" z="-32" type="red_flower" />
+                    <DrawBlock x="34" y="18" z="24" type="red_flower" />
+                    <DrawBlock x="-35" y="19" z="36" type="red_flower" />
+                    <DrawBlock x="38" y="20" z="-1" type="red_flower" />
+                    <DrawBlock x="8" y="21" z="-40" type="red_flower" />
+                    <DrawBlock x="32" y="22" z="-42" type="red_flower" />
+                    <DrawBlock x="-43" y="23" z="-44" type="red_flower" />
+                    <DrawBlock x="-28" y="24" z="46" type="red_flower" />
+                    <DrawBlock x="30" y="25" z="-48" type="red_flower" />
+                    <DrawBlock x="-27" y="26" z="50" type="red_flower" />
+                    <DrawBlock x="52" y="27" z="42" type="red_flower" />
+                    <DrawBlock x="-8" y="28" z="-54" type="red_flower" />
+                    <DrawBlock x="39" y="29" z="56" type="red_flower" />
+                    <DrawBlock x="58" y="30" z="-11" type="red_flower" />
+                    <DrawBlock x="44" y="31" z="60" type="red_flower" />
+                    <DrawBlock x="-62" y="32" z="-15" type="red_flower" />
+                    <DrawBlock x="23" y="33" z="-64" type="red_flower" />
+                    <DrawBlock x="66" y="34" z="-63" type="red_flower" />
+                    <DrawBlock x="47" y="35" z="68" type="red_flower" />
+                    <DrawBlock x="-49" y="36" z="-70" type="red_flower" />
+                    <DrawBlock x="-64" y="37" z="-72" type="red_flower" />
+                    <DrawBlock x="74" y="38" z="5" type="red_flower" />
+                    <DrawBlock x="3" y="39" z="76" type="red_flower" />
+                    <DrawBlock x="78" y="40" z="-10" type="red_flower" />
+                    <DrawBlock x="80" y="41" z="0" type="red_flower" />
+                    <DrawBlock x="-15" y="42" z="82" type="red_flower" />
+                    <DrawBlock x="49" y="43" z="84" type="red_flower" />
+                    <DrawBlock x="-63" y="44" z="86" type="red_flower" />
+                    <DrawBlock x="-32" y="45" z="-88" type="red_flower" />
+                    <DrawBlock x="-90" y="46" z="72" type="red_flower" />
+                    <DrawBlock x="3" y="47" z="92" type="red_flower" />
+                    <DrawBlock x="-39" y="48" z="-94" type="red_flower" />
+                    <DrawBlock x="57" y="49" z="96" type="red_flower" />
+                    <DrawBlock x="15" y="50" z="98" type="red_flower" />
+                    <DrawBlock x="18" y="51" z="100" type="red_flower" />
+                    <DrawBlock x="48" y="52" z="-102" type="red_flower" />
+                    <DrawBlock x="-86" y="53" z="104" type="red_flower" />
+                    <DrawBlock x="-106" y="54" z="93" type="red_flower" />
+                    <DrawBlock x="-17" y="55" z="108" type="red_flower" />
+                    <DrawBlock x="31" y="56" z="-110" type="red_flower" />
+                    <DrawBlock x="-112" y="57" z="-89" type="red_flower" />
+                    <DrawBlock x="-42" y="58" z="114" type="red_flower" />
+                    <DrawBlock x="116" y="59" z="87" type="red_flower" />
+                    <DrawBlock x="-9" y="60" z="-118" type="red_flower" />
+
+                </DrawingDecorator>                  
+                <ServerQuitFromTimeUp timeLimitMs="300000"/>
+                <ServerQuitWhenAnyAgentFinishes/>
+            </ServerHandlers>
+        </ServerSection>
+        <AgentSection mode="Survival">
+            <Name>Nb4tf4iBot</Name>
+            <AgentStart>
+                <Placement x="2.5" y="3.5" z="-0.5" yaw="90" pitch="0"/>                   
+            </AgentStart>
+            <AgentHandlers>
+                <DiscreteMovementCommands />
+                <InventoryCommands />
+                <ObservationFromRay/>
+                <ObservationFromHotBar/>
+                    <ObservationFromFullStats/>
+                    <ObservationFromGrid>
+                        <Grid name="nbr3x3">
+                            <min x="-1" y="-1" z="-1"/>
+                            <max x="1" y="1" z="1"/>
+                        </Grid>
+                    </ObservationFromGrid> 
+            </AgentHandlers>
+    </AgentSection>
+</Mission>
