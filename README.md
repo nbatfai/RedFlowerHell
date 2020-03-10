@@ -188,10 +188,10 @@ Based on experience gained in the first round, the following are prohibited:
 How to participate? Comment the link of your YouTube video to the post: https://www.facebook.com/groups/udprog/permalink/1342653805922505/
 
 Results
-* initial hack: -
-* current first place: -
-* current second place: -
-* current third place: -   
+* [initial hack](https://youtu.be/g_nWTXByPbs): 14 poppies, Bátfai, N.
+* current first place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
+* current second place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
+* current third place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
 
