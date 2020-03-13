@@ -147,6 +147,7 @@ A solution can be seen in this video: https://youtu.be/mT9FOzzSjUI
 
 #### Fifth circle
 
+Let's do the same task as in the previous circle but now with using 5x5x5 or 7x7x7 grid of blocks in ObservationFromGrid.
 
 ### Courses (for university students)
 In these courses students can earn extra points by solving MALMÖ based programming tasks.
@@ -189,9 +190,12 @@ How to participate? Comment the link of your YouTube video to the post: https://
 
 Results
 * [initial hack](https://youtu.be/g_nWTXByPbs): 14 poppies, Bátfai, N.
-* current first place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
-* current second place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
-* current third place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
+* current first place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg) 
+* current second place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
+* current third place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
+* current 4-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
+* current 5-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
+* current 6-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
 
