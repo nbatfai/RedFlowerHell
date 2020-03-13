@@ -4,7 +4,7 @@ NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena
 --------------------------------------------------------------------------
 
 * HI agents: [initial hack](https://youtu.be/SQSoLiRM1MQ): 18,  [world record](https://youtu.be/8yLmkjc2OiI): 46 poppies
-* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, world record: - poppies
+* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, [world record](https://youtu.be/0W_Oaxg2uyg): 39 poppies
 * AI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 * AGI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 
