@@ -195,7 +195,7 @@ Results
 * current third place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
 * current 4-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
 * current 5-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
-* current 6-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y) [source](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
+* current 6-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
 * current 7-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
