@@ -202,7 +202,7 @@ Results
 
 23 Mar - 6 Apr
 
-Qualification limit: 14 poppies. The deadline for submission of the source code of your SF agent is 1 Apr. There will be online qualifiers followed by offline finals  at the spring school holidays. Until now the red flowers have always been placed to the same place.
+Qualification limit: 22 poppies. The deadline for submission of the source code of your SF agent is 1 Apr. There will be online qualifiers followed by offline finals  at the spring school holidays. Until now the red flowers have always been placed to the same place.
 In the finals, the locations of the red flowers will be re-generated. (For example, try this mission XML file: [nb4tf4i_d_2.xml](nb4tf4i_d_2.xml) )
 
 Results
