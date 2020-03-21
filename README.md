@@ -191,13 +191,14 @@ How to participate? Comment the link of your YouTube video to the post: https://
 Results
 * [initial hack](https://youtu.be/g_nWTXByPbs): 14 poppies, Bátfai, N.
 * current first place: 53 poppies, [Káplár, I. & Halász, D.](https://youtu.be/trvcZtFgXdQ) 
-* current second place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg) 
-* current third place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
-* current 4-th place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
-* current 5-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
-* current 6-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
-* current 7-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
-* current 8-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
+* current second place: 41 poppies, [Kiss, K.](https://youtu.be/bkaLZ_Lo3QI) 
+* current third place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg) 
+* current 4-th place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
+* current 5-th place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
+* current 6-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE) 
+* current 7-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
+* current 8-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
+* current 9-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
 
