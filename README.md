@@ -4,7 +4,7 @@ NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena
 --------------------------------------------------------------------------
 
 * HI agents: [initial hack](https://youtu.be/SQSoLiRM1MQ): 18,  [world record](https://youtu.be/8yLmkjc2OiI): 46 poppies
-* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, [world record](https://youtu.be/0W_Oaxg2uyg): 39 poppies
+* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, [world record](https://youtu.be/trvcZtFgXdQ): 53 poppies
 * AI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 * AGI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 
@@ -192,7 +192,7 @@ Results
 * [initial hack](https://youtu.be/g_nWTXByPbs): 14 poppies, Bátfai, N.
 * first place: 53 poppies, [Káplár, I. & Halász, D.](https://youtu.be/trvcZtFgXdQ) 
 * second place: 41 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/bkaLZ_Lo3QI) 
-* third place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg), [Takács, B. & Szabó], D.(https://youtu.be/mGNQyU3lz9k) 
+* third place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg), [Takács, B. & Szabó, D.](https://youtu.be/mGNQyU3lz9k) 
 * 4-th place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
 * 5-th place: 28 poppies, [Szoboszlai, I. & Kiss, D.](https://youtu.be/bl2Y2JeVv88)
 * 6-th place: 26 poppies, [Nagy, E. & Kusmiczki, B.](https://youtu.be/B2YqNn274vA)
