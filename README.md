@@ -215,10 +215,12 @@ How to participate? Comment the link of your YouTube video to the post:
 https://www.facebook.com/groups/udprog/permalink/1359276454260240/
 
 Results
-* initial hack: -
-* current first place: -
-* current second place: -
-* current third place: -  
+* [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/greenpill_s24_v3_RF28.py)
+* current first place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
+* current second place 37 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/c-wDeAHSA70) 
+* current third place 35 poppies, [Takács, B. & Szabó, D.](https://youtu.be/yq6zzmbKv8Y)
+* 4-th third place 29 poppies, [Hosszú Gy. & Zselenák F.](https://youtu.be/aZV01QeVO-w), [Kántor, D.](https://youtu.be/8kOorpfhXT4) 
+* 5-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw) 
 
 ##### Red Flower Hell IV.
 
