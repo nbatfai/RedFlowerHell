@@ -216,14 +216,15 @@ https://www.facebook.com/groups/udprog/permalink/1359276454260240/
 
 Results
 * [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/greenpill_s24_v3_RF28.py)
-* current first place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
-* current second place 44 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/L1YDl1GEdsY) 
-* current third place 37 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/c-wDeAHSA70) 
-* current 4-th place 35 poppies, [Takács, B. & Szabó, D.](https://youtu.be/yq6zzmbKv8Y)
-* current 5-th third place 32 poppies, [Kántor, D.](https://youtu.be/3CGf8nQSc9s) 
-* current 6-th third place 29 poppies, [Hosszú Gy. & Zselenák F.](https://youtu.be/aZV01QeVO-w), [Kántor, D.](https://youtu.be/8kOorpfhXT4) 
-* current 7-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA), [Pálffy, V.](https://youtu.be/JyHDbm_8O9U)   
-* current 8-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw), [Bukovinszki, M.](https://youtu.be/_3aTNxOBZOY)  
+* current first place: 50 poppies, [Káplár, I. & Halász, D.](https://youtu.be/F3vZ432GOlg)
+* current second place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
+* current third place 44 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/L1YDl1GEdsY) 
+* current 4-th place 37 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/c-wDeAHSA70) 
+* current 5-th place 35 poppies, [Takács, B. & Szabó, D.](https://youtu.be/yq6zzmbKv8Y)
+* current 6-th third place 32 poppies, [Kántor, D.](https://youtu.be/3CGf8nQSc9s) 
+* current 7-th third place 29 poppies, [Hosszú Gy. & Zselenák F.](https://youtu.be/aZV01QeVO-w), [Kántor, D.](https://youtu.be/8kOorpfhXT4) 
+* current 8-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA), [Pálffy, V.](https://youtu.be/JyHDbm_8O9U)   
+* current 9-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw), [Bukovinszki, M.](https://youtu.be/_3aTNxOBZOY)  
 
 ##### Red Flower Hell IV.
 
