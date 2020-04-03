@@ -222,8 +222,8 @@ Results
 * current 4-th place 35 poppies, [Takács, B. & Szabó, D.](https://youtu.be/yq6zzmbKv8Y)
 * current 5-th third place 32 poppies, [Kántor, D.](https://youtu.be/3CGf8nQSc9s) 
 * current 6-th third place 29 poppies, [Hosszú Gy. & Zselenák F.](https://youtu.be/aZV01QeVO-w), [Kántor, D.](https://youtu.be/8kOorpfhXT4) 
-* current 7-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA)   
-* current 8-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw) 
+* current 7-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA), [Pálffy, V.](https://youtu.be/JyHDbm_8O9U)   
+* current 8-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw), [Bukovinszki, M.](https://youtu.be/_3aTNxOBZOY)  
 
 ##### Red Flower Hell IV.
 
