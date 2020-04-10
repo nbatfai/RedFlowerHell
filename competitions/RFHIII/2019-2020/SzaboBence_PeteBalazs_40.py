@@ -28,7 +28,7 @@ if agent_host.receivedArgument("help"):
     exit(0)
 
 # -- set up the mission -- #
-missionXML_file='nb4tf4i_d_2.xml'
+missionXML_file='nb4tf4i_d_RFHIII.xml'
 with open(missionXML_file, 'r') as f:   
     print("Loading mission from %s" % missionXML_file)
     mission_xml = f.read()
@@ -135,10 +135,6 @@ class Steve:
         else:
             return False
 
-    def felvesz(self):
-        self.agent_host.sendCommand("attack 1")
-        time.sleep(0.3)
-
     def inventory(self, observations):
         self.virag=observations.get('Hotbar_1_size', "")
         if self.virag==self.seged:
@@ -151,16 +147,40 @@ class Steve:
     def szintvalt(self,nbr):
         if self.szint[self.y+1]:
             if self.szint[self.y-1]:
-                for i in range(4):
+                db=0
+                for i in range(9):
+                    if nbr[i+9]=="dirt":
+                        db+=1
+                if db==5:
+                    self.agent_host.sendCommand( "turn -1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                for i in range(5):
                     self.agent_host.sendCommand( "strafe -1" )   
                     time.sleep(0.1)
             else:
-                for i in range(2):
+                db=0
+                for i in range(9):
+                    if nbr[i+9]=="dirt":
+                        db+=1
+                if db==5:
+                    self.agent_host.sendCommand( "turn -1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                    self.agent_host.sendCommand( "move 1" )   
+                    time.sleep(0.1)
+                for i in range(3):
                     self.agent_host.sendCommand( "strafe -1" )   
                     time.sleep(0.1)
         elif not self.szint[self.y+1]:
-            self.agent_host.sendCommand( "strafe 1" )   
-            time.sleep(0.1)
             self.agent_host.sendCommand( "jumpstrafe 1" )   
             time.sleep(0.1)
 
@@ -214,70 +234,60 @@ class Steve:
                 self.szint[i]=False
             for i in range(self.max+1,70,1):
                 self.szint[i]=True
-    
+
+        if nbr[13]=="red_flower":
+            #print("felvesz")
+            self.agent_host.sendCommand("attack 1")
+            time.sleep(0.4)
+            return
+
         if self.trap(nbr):
+            #print("trap")
             self.agent_host.sendCommand( "jumpuse 1" )   
-            time.sleep(0.1) 
-            self.agent_host.sendCommand( "strafe -1" )   
-            time.sleep(0.1)
+            time.sleep(0.2) 
             return
         
         if self.inventory(observations):
+            #print("szintvalt")
             self.szintvalt(nbr)
+            time.sleep(0.1)
             return
-        
-        if self.szint[self.y] and self.szint[self.y+1]:
-            self.agent_host.sendCommand( "turn -1" )
-            time.sleep(0.1)   
+
+        if self.szint[self.y]:
+            #print("feltetlesen szintvalt ")
+            self.agent_host.sendCommand( "turn -1" )   
+            time.sleep(0.1)
+            self.agent_host.sendCommand( "strafe 1" )   
+            time.sleep(0.1)
             self.szintvalt(nbr)
-            time.sleep(0.2)
+            time.sleep(0.1)
             return
 
         if "red_flower" in nbr:
             if nbr[self.elottembalra]=="red_flower" or nbr[self.elottembalra+9]=="red_flower":
                 self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
-                self.felvesz() 
-                self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
+                time.sleep(0.2)
                 return
-            if nbr[self.elottemjobbra+9]=="red_flower":
+            if nbr[self.elottemjobbra+9]=="red_flower" or nbr[self.elottemjobbra]=="red_flower":
                 self.agent_host.sendCommand( "strafe 1" )   
+                time.sleep(0.2)
+                return
+            if nbr[self.elottem+9]=="red_flower"or nbr[self.elottem]=="red_flower":
+                self.agent_host.sendCommand("move 1")
                 time.sleep(0.1)
-                self.felvesz() 
+                return
+            if nbr[self.balra+9]=="red_flower" or nbr[self.balra]=="red_flower":
                 self.agent_host.sendCommand( "strafe -1" )   
                 time.sleep(0.1)
                 return
-            if nbr[self.elottem+9]=="red_flower":
-                self.felvesz()
-                return
-            if nbr[self.balra]=="red_flower" or nbr[self.balra]=="red_flower":
-                self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
-                self.agent_host.sendCommand("move -1")
-                time.sleep(0.1)
-                self.felvesz()
-                self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
-                return
-            if nbr[self.jobbra+9]=="red_flower":
+            if nbr[self.jobbra+9]=="red_flower" or nbr[self.jobbra]=="red_flower":
                 self.agent_host.sendCommand( "strafe 1" )   
                 time.sleep(0.1)  
-                self.agent_host.sendCommand("move -1")
-                time.sleep(0.1)
-                self.felvesz()
-                self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
                 return
-            if nbr[self.mogottemjobbra+9]=="red_flower":
+            if nbr[self.mogottemjobbra+9]=="red_flower" or nbr[self.mogottemjobbra]=="red_flower":
                 self.agent_host.sendCommand("strafe 1")
                 time.sleep(0.1)
                 self.agent_host.sendCommand("move -1")
-                time.sleep(0.1)
-                #self.agent_host.sendCommand("move -1")
-                #time.sleep(0.1)
-                self.felvesz()
-                self.agent_host.sendCommand( "strafe -1" )   
                 time.sleep(0.1)
                 return
             if nbr[self.mogottembalra]=="red_flower" or nbr[self.mogottembalra+9]=="red_flower":
@@ -285,23 +295,37 @@ class Steve:
                 time.sleep(0.1)
                 self.agent_host.sendCommand("move -1")
                 time.sleep(0.1)
-                #self.agent_host.sendCommand("move -1")
-                #time.sleep(0.1)
-                self.felvesz()
-                self.agent_host.sendCommand( "strafe -1" )   
-                time.sleep(0.1)
                 return
-            if nbr[self.mogottem+9]=="red_flower":
+            if nbr[self.mogottem+9]=="red_flower" or nbr[self.mogottem]=="red_flower":
                 self.agent_host.sendCommand("move -1")
                 time.sleep(0.1)
-                #self.agent_host.sendCommand("move -1")
-                #time.sleep(0.1)
-                self.felvesz()
-                self.agent_host.sendCommand( "strafe -1" )   
+                return
+            if nbr[self.jobbbra+18]=="red_flower":
+                self.agent_host.sendCommand("jumpstrafe 1")
                 time.sleep(0.1)
                 return
-            if nbr[13]=="red_flower":
-                self.felvesz()
+            if nbr[self.elottemjobbbra+18]=="red_flower":
+                self.agent_host.sendCommand("jumpstrafe 1")
+                time.sleep(0.1)
+                self.agent_host.sendCommand("move 1")
+                time.sleep(0.1)
+                return
+            if nbr[self.mogottemjobbbra+18]=="red_flower":
+                self.agent_host.sendCommand("jumpstrafe 1")
+                time.sleep(0.1)
+                self.agent_host.sendCommand("move -1")
+                time.sleep(0.1)
+                return
+            if nbr[self.elottem+18]=="red_flower":
+                self.agent_host.sendCommand("jumpmove 1")
+                time.sleep(0.1)
+                return
+            if nbr[self.elottembalra+18]=="red_flower":
+                self.agent_host.sendCommand("jumpmove 1")
+                time.sleep(0.1)
+                self.agent_host.sendCommand("strafe -1")
+                time.sleep(0.1)
+                return
             return
 
         if self.lava(nbr):
@@ -312,6 +336,7 @@ class Steve:
             return
 
         if self.falelottem(nbr):
+            #print("fal")
             self.agent_host.sendCommand( "turn -1" )
             time.sleep(0.1) 
             self.agent_host.sendCommand( "strafe -1" )   
