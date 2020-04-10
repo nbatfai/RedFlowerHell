@@ -4,7 +4,7 @@ NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena
 --------------------------------------------------------------------------
 
 * HI agents: [initial hack](https://youtu.be/SQSoLiRM1MQ): 18,  [world record](https://youtu.be/8yLmkjc2OiI): 46 poppies
-* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, [world record](https://youtu.be/0W_Oaxg2uyg): 39 poppies
+* SW agents: [initial hack](https://youtu.be/WaXQtsc1tHQ): 13, [world record](https://youtu.be/trvcZtFgXdQ): 53 poppies
 * AI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 * AGI agents: there are no such agents at this moment, initial hack: -, world record: - poppies
 
@@ -190,30 +190,49 @@ How to participate? Comment the link of your YouTube video to the post: https://
 
 Results
 * [initial hack](https://youtu.be/g_nWTXByPbs): 14 poppies, Bátfai, N.
-* current first place: 53 poppies, [Káplár, I. & Halász, D.](https://youtu.be/trvcZtFgXdQ) 
-* current second place: 41 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/bkaLZ_Lo3QI) 
-* current third place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg) 
-* current 4-th place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
-* current 5-th place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
-* current 6-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE), [Tóth, F.](https://youtu.be/k6H4ir1zv-4)  
-* current 7-th place: 22 poppies, [Kiss, D.](https://youtu.be/HimY1E09DTQ) 
-* current 8-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
-* current 9-th place: 20 poppies, [Szoboszlai, I.](https://youtu.be/RNrPnC6a5J4)
-* current 10-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
-* current 11-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
+* first place: 53 poppies, [Káplár, I. & Halász, D.](https://youtu.be/trvcZtFgXdQ) 
+* second place: 41 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/bkaLZ_Lo3QI) 
+* third place: 39 poppies, [Hajdu, B.](https://youtu.be/0W_Oaxg2uyg), [Takács, B. & Szabó, D.](https://youtu.be/mGNQyU3lz9k) 
+* 4-th place: 37 poppies, [Káplár, I. et al.](https://youtu.be/ul70t9PZLrc) 
+* 5-th place: 28 poppies, [Szoboszlai, I. & Kiss, D.](https://youtu.be/bl2Y2JeVv88)
+* 6-th place: 26 poppies, [Nagy, E. & Kusmiczki, B.](https://youtu.be/B2YqNn274vA)
+* 7-th place: 24 poppies, [Bátfai, N.](https://youtu.be/sH4nlNheNf4)
+* 8-th place: 23 poppies, [Kántor, D.](https://youtu.be/6hb-MaX2OAE), [Tóth, F.](https://youtu.be/k6H4ir1zv-4)  
+* 9-th place: 22 poppies, [Kiss, D.](https://youtu.be/HimY1E09DTQ) 
+* 10-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
+* 11-th place: 20 poppies, [Szoboszlai, I.](https://youtu.be/RNrPnC6a5J4), [Zselenák, F.](https://youtu.be/Cfbs-4_ivzo), [Puskás, P.](https://youtu.be/SCwtrRw3_VI)
+* 12-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
+* 13-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
 
 23 Mar - 6 Apr
 
-Qualification limit: 22 poppies. The deadline for submission of the source code of your SF agent is 1 Apr. There will be online qualifiers followed by offline finals  at the spring school holidays. Until now the red flowers have always been placed to the same place.
+Qualification limit: 25 poppies. The deadline for submission of the source code of your SF agent is 1 Apr. There will be online qualifiers followed by ~~offline~~ (online because coronavirus) finals at the spring school holidays. Until now the red flowers have always been placed to the same place.
 In the finals, the locations of the red flowers will be re-generated. (For example, try this mission XML file: [nb4tf4i_d_2.xml](nb4tf4i_d_2.xml) )
 
+How to participate? Comment the link of your YouTube video to the post: 
+https://www.facebook.com/groups/udprog/permalink/1359276454260240/
+
 Results
-* initial hack: -
-* current first place: -
-* current second place: -
-* current third place: -  
+* [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/greenpill_s24_v3_RF28.py)
+* first place: 50 poppies, [Káplár, I. & Halász, D.](https://youtu.be/F3vZ432GOlg)
+* second place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
+* third place 44 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/L1YDl1GEdsY)
+* 4-th place 43 poppies, [Kálmán, I.& Katona, A.](https://youtu.be/VJXIP7L_Hx0)
+* 5-th place 40 poppies, [Szabó, B. & Pete, B.](https://youtu.be/4WJTLrBLhSI)
+* 6-th place 38 poppies, [Hosszú, Gy. & Zselenák, F.](https://youtu.be/UbiBkkLx1Fk)
+* 7-th place 37 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/c-wDeAHSA70) 
+* 8-th place 35 poppies, [Takács, B. & Szabó, D.](https://youtu.be/yq6zzmbKv8Y)
+* 9-th place 34 poppies, [Kálmán, I. & Katona, A.](https://youtu.be/_oYPAeMzCYc)
+* 10-th place 33 poppies, [Nagy, L. E. & Tódor, G.](https://youtu.be/WxEMSQYYYTM)
+* 11-th third place 32 poppies, [Kántor, D.](https://youtu.be/3CGf8nQSc9s)
+* 12-th third place 31 poppies, [Hosszú, Sz.](https://youtu.be/ZUnzzPzf2sI), [Czövek, B. & Barna, B.](https://youtu.be/JKD1jsf2M98)
+* 13-th third place 30 poppies, [Szilágyi, Z. & Kálny, Z.](https://youtu.be/Bl_gHelncAQ), [Koncz, B.](https://youtu.be/CrYvSfbWJd0), [Bukovinszki, M.](https://youtu.be/Utm67HyzyuY), [Geszterédi, J. & Gyulai, D.](https://youtu.be/3l0kV-wF14A), [Puskás, P.](https://youtu.be/1CmJLiGSWeA), [Puzsár, B. & Gyulai, D.](https://youtu.be/qgciMktuhI8), [Nagy, G. & Szilágyi, M.](https://youtu.be/48Z-MffMeYo), [Nagy, E. & Kusmiczki, B.](https://youtu.be/di0QN3Q3860), [Szoboszlai, I. & Kiss, D.](https://youtu.be/QsqIU8ZDllA) 
+* 14-th third place 29 poppies, [Hosszú Gy. & Zselenák F.](https://youtu.be/aZV01QeVO-w), [Kántor, D.](https://youtu.be/8kOorpfhXT4), [Koncz, B.](https://youtu.be/W5aXgJO4dTY), [Szimeonov, V.](https://youtu.be/9axEXwNtdKA), [Kalló, Gy. D. & Minya, Á.](https://youtu.be/98kdS6v9Gho), [Pintér, B. & Somogyi, V.](https://youtu.be/_Geq5MxDnE0), [Jakab, A.](https://youtu.be/WM38iZmjCwk), [Szoboszlai, I. & Kiss, D.](https://youtu.be/2NgwzCue4RQ) 
+* 15-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA), [Pálffy, V.](https://youtu.be/JyHDbm_8O9U), [Szilágyi, Z. & Kálny, Z.](https://youtu.be/wPvBTwPQvaI), [Nagy, E. & Kusmiczki, B.](https://youtu.be/X-LrGXy1tfs)
+* 16-th third place 27 poppies, [Tutor, T. & Czanik Tony, A.](https://youtu.be/xtwaPfWQyNQ)
+* 17-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw), [Bukovinszki, M.](https://youtu.be/_3aTNxOBZOY)  
 
 ##### Red Flower Hell IV.
 
@@ -261,4 +280,4 @@ ___
 Norbert Bátfai, PhD., University of Debrecen, IT Dept.,  batfai.norbert@inf.unideb.hu  
 [nb4tf4i](http://mine.ly/nb4tf4i.1)
 
-Last modified: Tue, 3 Mar 2020 21:18:00 GMT
+Last modified: Fri, 03 Apr 2020 15:17:00 GMT
