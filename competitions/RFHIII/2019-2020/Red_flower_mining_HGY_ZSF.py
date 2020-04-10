@@ -56,7 +56,7 @@ if agent_host.receivedArgument("help"):
 	exit(0)
 
 # -- set up the mission -- #
-missionXML_file='nb4tf4i_d_2.xml'
+missionXML_file='nb4tf4i_d_RFHIII.xml'
 with open(missionXML_file, 'r') as f:
 	print("NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena\n")
 	print("NB4tf4i vörös pipacsai (Vörös Pipacs Pokol) - DEAC-Hackers Battle Royale Arena\n")
@@ -157,7 +157,7 @@ class Steve:
 			if nbr[nbri[i]]=="dirt" :
 				dc = dc + 1            
 		return dc > 5
-	
+
 	def turnFromWall(self, nbr):
 		if (nbr[self.left_of_me_idx+9]=="air") and (nbr[self.front_of_me_idx]=="dirt"):
 			print(" Fordulás")
@@ -281,13 +281,12 @@ class Steve:
 		self.whatISee(observations)
 		#print("    Steve's <): ", self.lookingat)
 						
-		self.calcNbrIndex()                
+		self.calcNbrIndex()   
 						
 		if self.isInTrap(nbr) :
 			print(" Ugrás")
-			self.agent_host.sendCommand( "jumpmove 1" )
+			self.agent_host.sendCommand( "jumpstrafe -1" )
 			time.sleep(.2)
-			self.lvlDown(nbr)
 			return True
 
 		if self.trap > 5:
@@ -300,7 +299,7 @@ class Steve:
 		
 		for i in range(9):
 			if nbr[i]=="red_flower" or nbr[i+9]=="red_flower":
-				print(" Az ott egy pipacs?: ", i, " LEVEL ", self.y)
+				print(" Az ott egy pipacs?: ", i, " LEVEL ", self.y - 1)
 				if i == self.front_of_me_idxl :
 					print(" Balra lép ")
 					self.agent_host.sendCommand("move -1")
