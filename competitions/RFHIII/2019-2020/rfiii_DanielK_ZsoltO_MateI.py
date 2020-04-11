@@ -1,30 +1,4 @@
 from __future__ import print_function
-# ------------------------------------------------------------------------------------------------
-# Copyright (c) 2016 Microsoft Corporation
-# 
-# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-# associated documentation files (the "Software"), to deal in the Software without restriction,
-# including without limitation the rights to use, copy, modify, merge, publish, distribute,
-# sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-# 
-# The above copyright notice and this permission notice shall be included in all copies or
-# substantial portions of the Software.
-# 
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
-# NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-# DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-# ------------------------------------------------------------------------------------------------
-
-# Tutorial sample #2: Run simple mission using raw XML
-
-# Added modifications by Norbert BĂĄtfai (nb4tf4i) batfai.norbert@inf.unideb.hu, mine.ly/nb4tf4i.1
-# 2018.10.18, https://bhaxor.blog.hu/2018/10/18/malmo_minecraft
-# 2020.02.02, NB4tf4i's Red Flowers, http://smartcity.inf.unideb.hu/~norbi/NB4tf4iRedFlowerHell
-
-
 from builtins import range
 import MalmoPython
 import os
@@ -53,8 +27,7 @@ if agent_host.receivedArgument("help"):
     print(agent_host.getUsage())
     exit(0)
 
-# -- set up the mission -- #
-missionXML_file='nb4tf4i_d.xml'
+missionXML_file='nb4tf4ai_d_RFIII.xml'
 with open(missionXML_file, 'r') as f:
     print("NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena\n")
     print("NB4tf4i vĂśrĂśs pipacsai (VĂśrĂśs Pipacs Pokol) - DEAC-Hackers Battle Royale Arena\n\n")
@@ -122,15 +95,37 @@ class Steve:
         isMoving = False
 
         yPos = 0
+
         self.agent_host.sendCommand("look 1")
+        time.sleep(0.001)
+        self.agent_host.sendCommand("look 1")
+
+        jumpedY = False
 
         while world_state.is_mission_running:
 
             if world_state.number_of_observations_since_last_state != 0:
                 
+                
                 sensations = world_state.observations[-1].text            
                 observations = json.loads(sensations)
                 nbr3x3x3 = observations.get("nbr3x3", 0)
+
+                if self.yaw == 0 and nbr3x3x3[11] == 'dirt' and nbr3x3x3[14] == 'dirt':
+                    self.agent_host.sendCommand("turn -1")   
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("turn -1")   
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("move 1")   
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("move 1")  
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("move 1")  
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("turn -1")   
+                    turnCount -= 1
+                    stepCount += 15
+                   # stepCount = 0
 
                 if 'red_flower' in nbr3x3x3:
                    # time.sleep(0.25)
@@ -154,10 +149,8 @@ class Steve:
 
                 if not pickedFlower and nbr3x3x3[13] == 'red_flower':
                     time.sleep(0.05)
-                    #self.agent_host.sendCommand("look 1")
                     time.sleep(0.1)
                     self.agent_host.sendCommand("attack 1")
-                    
                     time.sleep(0.1)
                     self.wait()
                     time.sleep(0.05)
@@ -166,17 +159,16 @@ class Steve:
                     index = self.getPlaceableBlockIndex(observations)
 
                     time.sleep(0.075)
-                    self.agent_host.sendCommand('hotbar.%d 1' %2)
+                    
+                    placeBlockIndex = self.getPlaceableBlockIndex(json.loads(world_state.observations[0].text))
+
+                    self.agent_host.sendCommand('hotbar.%d 1' % placeBlockIndex)
                     time.sleep(0.15)
-                    self.agent_host.sendCommand("jumpuse %d" % 2)
+                    self.agent_host.sendCommand("jumpuse %d" % placeBlockIndex)
                     time.sleep(0.1)
-                    #self.agent_host.sendCommand("look -1")   
                     time.sleep(0.12)   
                     self.agent_host.sendCommand("move 1")      
                     time.sleep(0.05)       
-                    #stepCount -= 1
-                    ### !!!
-                    #stepCount -= 4
                     pickedFlower = True
                     
 
@@ -189,11 +181,9 @@ class Steve:
                 if "ZPos" in observations:
                     self.z = int(observations["ZPos"])        
                 if "YPos" in observations:
-                    self.y = int(observations["YPos"])       
+                    self.y = int(observations["YPos"])      
 
                 if pickedFlower == True:
-                    # Task 1: Print Debug msg
-                    #print('\nSteve talalt egy piros viragot!\n')
                     time.sleep(0.05)
                     self.agent_host.sendCommand("turn -1")   
                     time.sleep(0.05)
@@ -213,25 +203,29 @@ class Steve:
 
                 if initialTurn:
                     #self.agent_host.sendCommand("turn 1")
-                    self.agent_host.sendCommand("turn -1")
-                    self.agent_host.sendCommand("turn -1")
+                    #self.agent_host.sendCommand("turn -1")
+                    #self.agent_host.sendCommand("turn -1")
                     #self.agent_host.sendCommand("turn 1")
+                    #time.sleep(0.001)
+                    self.agent_host.sendCommand("turn 1")
+                    time.sleep(0.05)
+                    self.agent_host.sendCommand("turn 1")
+                    time.sleep(0.05)
                     for i in range(0,5):
                         self.agent_host.sendCommand("move 1")
                         time.sleep(0.05)
                     self.agent_host.sendCommand("jumpmove 1")
                     levelIncrement += 4
-                    for i in range(0,30):
+                    for i in range(0,25):
                         levelIncrement += 4
-                        time.sleep(0.05)
                         self.agent_host.sendCommand("move 1")
-                        time.sleep(0.1)
+                        time.sleep(0.05)
                         self.agent_host.sendCommand("jumpmove 1")
                     for i in range(0,20):
                         self.agent_host.sendCommand("move 1")
                         time.sleep(0.05)
                     self.turn()
-                    turnCount -= 1 # to cover every side
+                    turnCount -= 1
                     initialTurn = False
                     stepCount = math.ceil(levelIncrement / 2)
 
@@ -242,72 +236,82 @@ class Steve:
                 elif  turnCount == 3:
                     if pickedFlower:
                         self.agent_host.sendCommand("turn -1")
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("jumpmove 1")
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("turn -1")
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         #self.agent_host.sendCommand("jumpmove 1")
                         #self.agent_host.sendCommand("turn -1")
                         self.agent_host.sendCommand("move 1")  
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("move 1")  
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("turn 1")
                         stepCount = 1
                     else:
                         self.agent_host.sendCommand("turn -1")   
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("move 1")   
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("move 1")   
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("turn -1")
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("move 1")   
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("move 1")   
-                        time.sleep(0.05)
+                        time.sleep(0.1)
                         self.agent_host.sendCommand("turn 1") 
                         stepCount = 0
+                        
                     levelRound = 1
                     level -= 1   
                     turnCount = 0
                     levelIncrement -= 4
+                    #continue
                 else:
                     if pickedFlower:
                         self.agent_host.sendCommand("turn -1")
-                        time.sleep(0.05)
+                        time.sleep(0.085)
                         self.agent_host.sendCommand("move 1")
-                        time.sleep(0.05)
+                        time.sleep(0.085)
                         self.agent_host.sendCommand("turn -1")
-                        time.sleep(0.05)
+                        time.sleep(0.085)
                         self.agent_host.sendCommand("move 1")
-                        #self.agent_host.sendCommand("turn -1")
                         self.agent_host.sendCommand("move 1")  
+                        time.sleep(0.085)
                         self.agent_host.sendCommand("turn 1")
-                        #self.agent_host.sendCommand("move 1")  
                         stepCount = 1
                     stepCount = 0
-                    self.turn()
+                    time.sleep(0.085)
+                    if jumpedY == False:
+                        self.turn()
+
                     turnCount += 1
+                jumpedY = False
 
                 if yPos == self.y and pickedFlower == False:
-                    time.sleep(0.05)
+                    time.sleep(0.1)
                     self.agent_host.sendCommand("turn -1")
-                    time.sleep(0.05)
+                    time.sleep(0.1)
                     self.agent_host.sendCommand("turn -1")
-                    time.sleep(0.05)
+                    time.sleep(0.1)
                     self.agent_host.sendCommand("move 1")
-                    time.sleep(0.05)
+                    time.sleep(0.1)
                     self.agent_host.sendCommand("move 1")
-                    time.sleep(0.05)
+                    time.sleep(0.1)
                     self.agent_host.sendCommand("turn 1")
                     yPos = 0
                     stepCount = 0
-                
+                    turnCount = 0
+                    jumpedY = True
+
                 if 'red_flower' in nbr3x3x3:
-                    time.sleep(0.01)
+                    time.sleep(0.015)
                 else:
                    time.sleep(0.001)
+
 
             world_state = self.agent_host.getWorldState()
 
