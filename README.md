@@ -236,7 +236,7 @@ Results
 
 ##### Red Flower Hell IV.
 
-6 Apr - 13 Apr
+13 Apr - 27 Apr
 
 In this round the full arena will be re-generated: not only the coords of the red flowers but also the walls of the hillside will change as it can be seen in the following figure.
 
