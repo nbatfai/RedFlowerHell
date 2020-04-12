@@ -27,7 +27,7 @@ if agent_host.receivedArgument("help"):
     print(agent_host.getUsage())
     exit(0)
 
-missionXML_file='nb4tf4ai_d_RFIII.xml'
+missionXML_file='nb4tf4i_d_RFIII.xml'
 with open(missionXML_file, 'r') as f:
     print("NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena\n")
     print("NB4tf4i vĂśrĂśs pipacsai (VĂśrĂśs Pipacs Pokol) - DEAC-Hackers Battle Royale Arena\n\n")
@@ -60,6 +60,7 @@ class Steve:
         self.pitch = 0        
 
     def turn(self):
+        print('Steve megállt kávézni')
         self.agent_host.sendCommand("turn -1")
 
     def move(self):
@@ -106,7 +107,6 @@ class Steve:
 
             if world_state.number_of_observations_since_last_state != 0:
                 
-                
                 sensations = world_state.observations[-1].text            
                 observations = json.loads(sensations)
                 nbr3x3x3 = observations.get("nbr3x3", 0)
@@ -124,8 +124,7 @@ class Steve:
                     time.sleep(0.05)
                     self.agent_host.sendCommand("turn -1")   
                     turnCount -= 1
-                    stepCount += 15
-                   # stepCount = 0
+                    stepCount = math.ceil(levelIncrement / 2) - 2
 
                 if 'red_flower' in nbr3x3x3:
                    # time.sleep(0.25)
@@ -183,6 +182,11 @@ class Steve:
                 if "YPos" in observations:
                     self.y = int(observations["YPos"])      
 
+                if self.y == 3:
+                    levelIncrement = (self.y - 2) * 4;
+                else:
+                    levelIncrement = (self.y - 3) * 4;
+
                 if pickedFlower == True:
                     time.sleep(0.05)
                     self.agent_host.sendCommand("turn -1")   
@@ -195,18 +199,12 @@ class Steve:
                     self.agent_host.sendCommand("move 1")  
                     self.agent_host.sendCommand("move 1")  
                     time.sleep(0.05)
-                    #stepCount -= 2
                     stepCount -= 4
-                    levelIncrement -= 4
+                    #levelIncrement -= 4
                     turnCount = -1
                     yPos = self.y
 
                 if initialTurn:
-                    #self.agent_host.sendCommand("turn 1")
-                    #self.agent_host.sendCommand("turn -1")
-                    #self.agent_host.sendCommand("turn -1")
-                    #self.agent_host.sendCommand("turn 1")
-                    #time.sleep(0.001)
                     self.agent_host.sendCommand("turn 1")
                     time.sleep(0.05)
                     self.agent_host.sendCommand("turn 1")
@@ -215,9 +213,9 @@ class Steve:
                         self.agent_host.sendCommand("move 1")
                         time.sleep(0.05)
                     self.agent_host.sendCommand("jumpmove 1")
-                    levelIncrement += 4
-                    for i in range(0,25):
-                        levelIncrement += 4
+                   # levelIncrement += 4
+                    for i in range(0,26):
+                        #levelIncrement += 4
                         self.agent_host.sendCommand("move 1")
                         time.sleep(0.05)
                         self.agent_host.sendCommand("jumpmove 1")
@@ -231,8 +229,7 @@ class Steve:
 
 
                 if stepCount < 9 + levelIncrement:
-                    self.agent_host.sendCommand("move 1")
-                    stepCount += 1
+                    pass
                 elif  turnCount == 3:
                     if pickedFlower:
                         self.agent_host.sendCommand("turn -1")
@@ -268,7 +265,7 @@ class Steve:
                     levelRound = 1
                     level -= 1   
                     turnCount = 0
-                    levelIncrement -= 4
+                    #levelIncrement -= 4
                     #continue
                 else:
                     if pickedFlower:
@@ -289,6 +286,7 @@ class Steve:
                         self.turn()
 
                     turnCount += 1
+                
                 jumpedY = False
 
                 if yPos == self.y and pickedFlower == False:
@@ -310,8 +308,11 @@ class Steve:
                 if 'red_flower' in nbr3x3x3:
                     time.sleep(0.015)
                 else:
-                   time.sleep(0.001)
+                   pass
 
+            self.agent_host.sendCommand("move 1")
+            stepCount += 1
+            time.sleep(0.0475)
 
             world_state = self.agent_host.getWorldState()
 
@@ -350,4 +351,3 @@ for ii in range(num_repeats):
     steve.run()
 
 print("Mission ended")
-# Mission has ended.
