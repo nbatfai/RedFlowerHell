@@ -55,7 +55,7 @@ if agent_host.receivedArgument("help"):
     exit(0)
 
 # -- set up the mission -- #
-missionXML_file='nb4tf4i_d_2.xml'
+missionXML_file='nb4tf4i_d_RFHIII_day2.xml'
 with open(missionXML_file, 'r') as f:
     print("NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena\n")
     print("NB4tf4i vörös pipacsai (Vörös Pipacs Pokol) - DEAC-Hackers Battle Royale Arena\n\n")
@@ -92,32 +92,37 @@ class Steve:
         self.UnrotatedMatrix = [[9,10,11],[12,13,14],[15,16,17]]
         self.lent=False
         self.countTurns=0
+        self.attempt = 0
+        self.pA=0
+        self.pB=0
+        self.pC=0
+        self.wrongHeightMoves=0
     def observe(self):
-        if not self.world_state.is_mission_running:
-            return
-        lastSensedTime = -1
-        time.sleep(0.02)
+        time.sleep(0.01)
         self.world_state = agent_host.getWorldState()
         if self.world_state.number_of_observations_since_last_state != 0:
             self.sensations = self.world_state.observations[-1].text
             self.observation = json.loads(self.sensations)
-            lastSensedTime=self.observation.get("WorldTime",0)
-            #print(".", end = "")
-        if self.worldtime == lastSensedTime:
-            self.observe()
-        else:
-            self.worldtime = lastSensedTime
+            return
+        self.observe()
         return
     def brain(self):
         self.Move = True
         self.observe()
-        #print()
         nbr = self.observation.get("nbr3x3",0)
         yaw = self.observation.get("Yaw",0)
         self.X=self.observation.get("XPos",0)
         self.Y=self.observation.get("YPos",0)
         self.Z=self.observation.get("ZPos",0)
+        print("\rX:" + str(self.X)[0:3]+ " Y:" + str(self.Y)[0:3]+ " Z:" + str(self.Z)[0:3]+" PA:" + str(self.pA)[0:3]+" PB:"+ str(self.pB)[0:3] + " PC:"+ str(self.pC)[0:3]+ " WrongHeightMoves:" + str(self.wrongHeightMoves), end = "")
         self.Rotation(yaw)
+        if self.Y<=2:
+            print("\n\nSELF-DESTRUCT")
+            while self.world_state.is_mission_running:
+                self.observe()
+                self.agent_host.sendCommand("attack 1")
+                print("\rAttemps to get flowers: "+ str(steve.attempt) +" flowers picked up: "+str(steve.nof_red_flower), end="")
+                time.sleep(1)
         if nbr[self.RotatedMatrix[0][1]] == "dirt" and self.roundsAfterTurn>5:
                 self.agent_host.sendCommand("turn -1")
                 self.agent_host.sendCommand("strafe -1")
@@ -126,20 +131,17 @@ class Steve:
                 self.roundsAfterTurn = 0
                 self.countTurns = self.countTurns+1
         if "flowing_lava" in nbr:
-            for i in range(6):
+            for i in range(2):
                 self.agent_host.sendCommand("strafe -1")
                 time.sleep(0.01)
             self.countTurns=0
             return
         if "red_flower" in nbr:
-            self.agent_host.sendCommand("move -1")
-            self.agent_host.sendCommand("move -1")
-            self.agent_host.sendCommand("move -1")
-            self.agent_host.sendCommand("move -1")
-            self.agent_host.sendCommand("move -1")
-            self.agent_host.sendCommand("move -1")
-            time.sleep(0.1)
+            time.sleep(0.02)
             self.approach(9)
+            self.agent_host.sendCommand("move -1")
+            self.agent_host.sendCommand("move -1")
+            self.agent_host.sendCommand("move -1")
             self.countTurns=0
             self.Move=False
         if self.Move:
@@ -147,17 +149,16 @@ class Steve:
             self.agent_host.sendCommand("move 1")
             self.agent_host.sendCommand("move 1")
             self.roundsAfterTurn= self.roundsAfterTurn+1
-        if self.countTurns>7:
+        if self.pA==self.Y or self.pB==self.Y or self.pC==self.Y:
+            self.wrongHeightMoves = self.wrongHeightMoves+1
+            print(" !", end="")
+        if self.countTurns>7 or self.wrongHeightMoves>5:
+            self.agent_host.sendCommand("strafe -1")
+            time.sleep(0.005)
             self.countTurns=0
+            self.wrongHeightMoves=0
             self.lent = False
-            self.agent_host.sendCommand("strafe -1")
-            time.sleep(0.01)
-            self.agent_host.sendCommand("strafe -1")
-            time.sleep(0.01)
-            self.agent_host.sendCommand("strafe -1")
-            time.sleep(0.01)
-            self.agent_host.sendCommand("strafe -1")
-            time.sleep(0.01)
+            print("\nwrong position")
     def run(self):
         self.observe()
         self.fel2(50)
@@ -170,7 +171,7 @@ class Steve:
         self.agent_host.sendCommand("look 1")
         self.agent_host.sendCommand("look 1")
         time.sleep(0.1)
-        for k in [0,1,2,3]:
+        for k in [0,1]:
             self.agent_host.sendCommand("attack 1")
             time.sleep(0.2)
             self.agent_host.sendCommand( "jumpmove 1" )
@@ -182,32 +183,45 @@ class Steve:
             self.agent_host.sendCommand( "jumpmove 1" )
             time.sleep(0.01)
             self.agent_host.sendCommand("move 1")
-        time.sleep(0.01)
-        self.agent_host.sendCommand("move -1")
-        self.agent_host.sendCommand("turn -1")
-        time.sleep(0.01)
+        time.sleep(0.005)
     def pick(self):
-        print("felszed")
+        self.observe()
+        self.Y=self.observation.get("YPos",0)
+        print("felszed ")
+        print("at Y=" + str(self.Y))
+        self.wrongHeightMoves=0
+        self.pC = self.pB
+        self.pB=self.pA
+        self.pA=self.Y
+        self.attempt = self.attempt+1
         time.sleep(0.05)
         self.agent_host.sendCommand("attack 1")
         time.sleep(0.4)
         self.agent_host.sendCommand("jumpuse")
         time.sleep(0.3)
-        self.nof_red_flower= self.nof_red_flower+1
+        self.agent_host.sendCommand("move 1")
+        time.sleep(0.01)
+        self.agent_host.sendCommand("move -1")
+        time.sleep(0.01)
+        self.agent_host.sendCommand("move -1")
+        time.sleep(0.01)
         self.observe()
+        hotbar1_size =0
         if "Hotbar_1_size" in self.observation:
                     hotbar1_size = self.observation.get("Hotbar_1_size",0)
                     print("Flowers at hand: ", end="")
                     print(hotbar1_size)
-        nbr = self.observation.get("nbr3x3", 0)
-        if "red_flower" in nbr:
-            self.keres()
+        if hotbar1_size > 0:
+            self.nof_red_flower = hotbar1_size
         print("----")
-    def keres(self):
+    def keres(self, n):
         print("keres", end="-")
-        time.sleep(0.1)
+        time.sleep(0.04+0.05*n)
         self.observe()
         nbr = self.observation.get("nbr3x3", 0)
+        if "flowing_lava" in nbr:
+            self.agent_host.sendCommand("strafe -1")
+            return
         if nbr[self.RotatedMatrix[1][1]] == "red_flower":
             self.pick()
             return
@@ -215,56 +229,50 @@ class Steve:
             valasz = True
             yaw = self.observation.get("Yaw",0)
             self.Rotation(yaw)
-            time.sleep(0.1)
-            if valasz and "red_flower" in [nbr[self.RotatedMatrix[0][0]-9], nbr[self.RotatedMatrix[0][0]], nbr[self.RotatedMatrix[0][1]], nbr[self.RotatedMatrix[0][2]]]:
-                print("elore")
-                self.agent_host.sendCommand("move 1")
-                valasz=False
-                self.keres()
-            if valasz and "red_flower" in [nbr[self.RotatedMatrix[2][0]-9],nbr[self.RotatedMatrix[2][0]], nbr[self.RotatedMatrix[2][1]], nbr[self.RotatedMatrix[2][2]]]:
-                print("hatra")
-                self.agent_host.sendCommand("move -1")
-                valasz=False
-                self.keres()
             if valasz and (nbr[self.RotatedMatrix[1][0]-9] == "red_flower" or nbr[self.RotatedMatrix[1][0]] == "red_flower"):
                 print("balra")
                 self.agent_host.sendCommand("strafe -1")
                 valasz=False
-                self.keres()
-                self.agent_host.sendCommand("turn 1")
-                time.sleep(0.05)
-                self.agent_host.sendCommand("jumpmove 1")
-                time.sleep(0.1)
-                self.agent_host.sendCommand("turn -1")
+                self.keres(n+1)
+                self.agent_host.sendCommand("jumpstrafe 1")
                 time.sleep(0.05)
                 self.lent = True
             if valasz and nbr[self.RotatedMatrix[1][2]] == "red_flower":
                 print("jobbra")
-                print(self.lent)
                 self.agent_host.sendCommand("strafe 1")
                 valasz=False
-                self.keres()
-                time.sleep(0.01)
+                self.keres(n+1)
+                time.sleep(0.005)
                 self.agent_host.sendCommand("strafe -1")
-                time.sleep(0.01)
+                time.sleep(0.005)
                 self.agent_host.sendCommand("move -1")
-                time.sleep(0.01)
+                time.sleep(0.005)
                 self.agent_host.sendCommand("strafe -1")
-                time.sleep(0.01)
+                time.sleep(0.005)
                 self.agent_host.sendCommand("move -1")
-                time.sleep(0.01)
+                time.sleep(0.005)
                 self.agent_host.sendCommand("strafe -1")
-                time.sleep(0.01)
+                time.sleep(0.005)
                 if self.lent:
                     self.agent_host.sendCommand("move -1")
-                    time.sleep(0.01)
+                    time.sleep(0.005)
                     self.agent_host.sendCommand("strafe -1")
-                    time.sleep(0.01)
+                    time.sleep(0.005)
                     self.agent_host.sendCommand("move -1")
-                    time.sleep(0.01)
+                    time.sleep(0.005)
                     self.agent_host.sendCommand("strafe -1")
-                    time.sleep(0.01)
-                self.lent = False
+                    time.sleep(0.005)
+                    self.lent = False
+            if valasz and "red_flower" in [nbr[self.RotatedMatrix[0][0]-9], nbr[self.RotatedMatrix[0][0]], nbr[self.RotatedMatrix[0][1]], nbr[self.RotatedMatrix[0][2]]]:
+                print("elore")
+                self.agent_host.sendCommand("move 1")
+                valasz=False
+                self.keres(n+1)
+            if valasz and "red_flower" in [nbr[self.RotatedMatrix[2][0]-9],nbr[self.RotatedMatrix[2][0]], nbr[self.RotatedMatrix[2][1]], nbr[self.RotatedMatrix[2][2]]]:
+                print("hatra")
+                self.agent_host.sendCommand("move -1")
+                valasz=False
+                self.keres(n+1)
     def Rotation(self, yaw):
         n = int(yaw/90)+2
         #print(yaw)
@@ -283,12 +291,13 @@ class Steve:
             self.observe()
             nbr = self.observation.get("nbr3x3", 0)
             if "red_flower" in nbr:
-                self.keres()
+                print("\napproach "+str(i))
+                self.keres(0)
                 return
-            time.sleep(0.1)
-            self.agent_host.sendCommand("move 1")
+            self.agent_host.sendCommand("move -1")
+            time.sleep(0.06)
 time.sleep(1)
-print("ver 10")        
+print("ver 14")        
 num_repeats = 1
 for ii in range(num_repeats):
 
@@ -322,8 +331,7 @@ for ii in range(num_repeats):
     print("NB4tf4i Red Flower Hell running\n")
     steve = Steve(agent_host)
     steve.run()
-    print("Attemps to get flowers: "+ str(steve.nof_red_flower))
-    print("flowers picked up: "+str(steve.nof_red_flower))
+    print("\rAttemps to get flowers: "+ str(steve.attempt) +" flowers picked up: "+str(steve.nof_red_flower))
 
 print("Mission ended")
 # Mission has ended.
