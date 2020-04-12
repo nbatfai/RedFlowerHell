@@ -27,7 +27,7 @@ if agent_host.receivedArgument("help"):
     print(agent_host.getUsage())
     exit(0)
 
-missionXML_file='nb4tf4ai_d_RFIII.xml'
+missionXML_file='nb4tf4i_d_RFIII.xml'
 with open(missionXML_file, 'r') as f:
     print("NB4tf4i's Red Flowers (Red Flower Hell) - DEAC-Hackers Battle Royale Arena\n")
     print("NB4tf4i vĂśrĂśs pipacsai (VĂśrĂśs Pipacs Pokol) - DEAC-Hackers Battle Royale Arena\n\n")
