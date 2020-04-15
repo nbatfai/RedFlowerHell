@@ -214,7 +214,7 @@ In the finals, the locations of the red flowers will be re-generated. (For examp
 How to participate? Comment the link of your YouTube video to the post: 
 https://www.facebook.com/groups/udprog/permalink/1359276454260240/
 
-Results
+Qualification Results
 * [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/greenpill_s24_v3_RF28.py)
 * first place: 50 poppies, [Káplár, I. & Halász, D.](https://youtu.be/F3vZ432GOlg)
 * second place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
@@ -233,6 +233,19 @@ Results
 * 15-th third place 28 poppies, [Bátfai, N. B.](https://youtu.be/HUKsXKmG2Hg), [Szoboszlai, I. & Kiss, D.](https://youtu.be/RTyyW5qfvFA), [Pálffy, V.](https://youtu.be/JyHDbm_8O9U), [Szilágyi, Z. & Kálny, Z.](https://youtu.be/wPvBTwPQvaI), [Nagy, E. & Kusmiczki, B.](https://youtu.be/X-LrGXy1tfs)
 * 16-th third place 27 poppies, [Tutor, T. & Czanik Tony, A.](https://youtu.be/xtwaPfWQyNQ)
 * 17-th third place 26 poppies, [Szabó, B. & Pete, B.](https://youtu.be/jwbmBLFpaWw), [Bukovinszki, M.](https://youtu.be/_3aTNxOBZOY)  
+
+Final Results
+* [Day 1](https://youtu.be/OmNhgKC1c3s), [Day 2](https://youtu.be/kU7U9vBHfgk), [Day 3](https://youtu.be/dKWSLyfJbTs),  
+[source codes available](https://github.com/nbatfai/RedFlowerHell/tree/master/competitions/RFHIII/2019-2020)
+* first place: 46 poppies, there was a dead heat for first place between **Káplár, I. & Halász, D.** and **Kiss, K. & Hegedűs. P.**
+* second place: 43 poppies, **Hajdu, B. & Dávid, Gy.**  
+* third place 40 poppies, **Szabó, B. & Pete, B.**
+* 4-th place 38 poppies, **Nagy, L. E. & Tódor, G.**
+* 5-th place 36 poppies, **Kálmán, I. & Katona, A.**
+* 6-th place 34 poppies, **Takács, B. & Szabó, D.**
+* 7-th place 22 poppies, **Kántor, D.**
+* 8-th place 11 poppies, **Hosszú, Gy. & Zselenák, F.**
+
 
 ##### Red Flower Hell IV.
 
