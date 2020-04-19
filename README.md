@@ -20,7 +20,7 @@ In the elements of Red Flower Hell series we are going to develop intelligent ag
 [nb4tf4i.xml](nb4tf4i.xml)  
 [nb4tf4i_red_flower_hell_basic_human.py](nb4tf4i_red_flower_hell_basic_human.py)
 
-HI agents Results
+HI Agents Results
 
 * [initial hack](https://youtu.be/SQSoLiRM1MQ): 18, N. Bátfai
 * [world record](https://youtu.be/8yLmkjc2OiI): 46 poppies, I. Horváth
@@ -247,15 +247,31 @@ Final Results
 * 8-th place 11 poppies, **Hosszú, Gy. & Zselenák, F.**
 
 
-##### Red Flower Hell IV.
+##### Red Flower Hell IV. - "RFH Rudolph"
 
-13 Apr - 27 Apr
+13 Apr - 8 May
 
-In this round the full arena will be re-generated: not only the coords of the red flowers but also the walls of the hillside will change as it can be seen in the following figure.
+Qualification limit: ?? poppies. The deadline for submission of the source code of your SF agent is 8 May. In this round the full arena will be re-generated: not only the coords of the red flowers but also the walls of the hillside will change as it can be seen in the following figure.
 
 ![Red Flower Hell Arena 3](RFHarena3.png "Red Flower Hell Arena 3")
+[Rudolf](https://youtu.be/RShUsRJKIWI) has been chosen as the default arena for RFH IV.
 
-Results
+How to participate? Comment the link of your YouTube video to the post: 
+https://www.facebook.com/groups/udprog/permalink/1380895935431625/
+
+HI Agents Results
+* initial hack: -
+* current first place: -
+* current second place: -
+* current third place: -  
+
+Qualification Results
+* initial hack: -
+* current first place: -
+* current second place: -
+* current third place: -  
+
+Final Results
 * initial hack: -
 * current first place: -
 * current second place: -
@@ -293,4 +309,4 @@ ___
 Norbert Bátfai, PhD., University of Debrecen, IT Dept.,  batfai.norbert@inf.unideb.hu  
 [nb4tf4i](http://mine.ly/nb4tf4i.1)
 
-Last modified: Fri, 03 Apr 2020 15:17:00 GMT
+Last modified: Fri, 19 Apr 2020 15:17:00 GMT
