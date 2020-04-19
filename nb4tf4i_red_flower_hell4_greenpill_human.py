@@ -133,7 +133,7 @@ class Steve:
         flower = False
         dirt = False
         dirt_idx = 0
-        for i in range(2):
+        for i in range(8):
             hotbari = 'Hotbar_'+str(i)+'_item'
             hotbars = 'Hotbar_'+str(i)+'_size'
             slot0_contents = observations.get(hotbari, "")
@@ -276,7 +276,7 @@ class Steve:
         
         delay = .02
         
-        return;
+        return delay;
         
         if self.state == SteveState.GOING_UP :
 
