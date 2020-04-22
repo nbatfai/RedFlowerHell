@@ -297,12 +297,16 @@
             </AgentStart>
             <AgentHandlers>
 
-                <!--                <DiscreteMovementCommands />-->
 
-                <!-- https://gitter.im/Microsoft/malmo/archives/2018/01/16?at=5a5ddf51290a1f456194c199 -->
-<DiscreteMovementCommands> <ModifierList type="deny-list"> <command>attack</command> </ModifierList> </DiscreteMovementCommands> <ContinuousMovementCommands> <ModifierList type="allow-list"> <command>attack</command> </ModifierList> </ContinuousMovementCommands>
-                <!-- https://gitter.im/Microsoft/malmo/archives/2018/01/16?at=5a5ddf51290a1f456194c199 -->
 
+        <ContinuousMovementCommands> 
+            <ModifierList type="deny-list"> <command>move</command> </ModifierList> 
+        </ContinuousMovementCommands>
+
+        <DiscreteMovementCommands> 
+            <ModifierList type="allow-list"> <command>move</command> </ModifierList> 
+        </DiscreteMovementCommands>                
+                
                 <InventoryCommands />
                 <ObservationFromRay/>
                 <ObservationFromHotBar/>
