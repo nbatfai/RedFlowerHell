@@ -39,8 +39,8 @@ The first experiments with MALMÖ  we had taken in our immediate family circle a
 #### First circle
 [Demo](https://youtu.be/uA6RHzXH840)  
 
-[nb4tf4i.xml](nb4tf4i.xml)  
-[nb4tf4i_red_flower_hell_basic.py](nb4tf4i_red_flower_hell_basic.py)
+[nb4tf4i.xml](RFH0-3/nb4tf4i.xml)  
+[nb4tf4i_red_flower_hell_basic.py](RFH0-3/nb4tf4i_red_flower_hell_basic.py)
 
 * Modify the initial loop
 ```python
@@ -64,8 +64,8 @@ in spiral line in the arena until he reach the lava.
 #### Second circle
 [Demo](https://youtu.be/Fc33ByQ6mh8)  
 
-[nb4tf4i_d.xml](nb4tf4i_d.xml)  
-[nb4tf4i_red_flower_hell_basic_d.py](nb4tf4i_red_flower_hell_basic_d.py)
+[nb4tf4i_d.xml](RFH0-3/nb4tf4i_d.xml)  
+[nb4tf4i_red_flower_hell_basic_d.py](RFH0-3/nb4tf4i_red_flower_hell_basic_d.py)
 
 ```python
 # Loop until mission ends:
@@ -86,7 +86,7 @@ Let's do the same task as in the first circle but now with using [discrete motio
 
 #### Third circle
 [Programming task](https://youtu.be/-GX8dzGqTdM)  
-[nb4tf4i_red_flower_hell_basic_d_sense.py](nb4tf4i_red_flower_hell_basic_d_sense.py)
+[nb4tf4i_red_flower_hell_basic_d_sense.py](RFH0-3/nb4tf4i_red_flower_hell_basic_d_sense.py)
 
 ```python
 class Steve:
@@ -201,7 +201,7 @@ Results
 * 9-th place: 22 poppies, [Kiss, D.](https://youtu.be/HimY1E09DTQ)
 * 10-th place: 21 poppies, [Hajdu, B. & György, D.](https://youtu.be/22t7Jhanl8Q)
 * 11-th place: 20 poppies, [Szoboszlai, I.](https://youtu.be/RNrPnC6a5J4), [Zselenák, F.](https://youtu.be/Cfbs-4_ivzo), [Puskás, P.](https://youtu.be/SCwtrRw3_VI)
-* 12-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
+* 12-th place: 19 poppies, [Bátfai, N.](https://youtu.be/VP0kfvRYD1Y), [source code available](RFH0-3/nb4tf4i_d_rfh2_bu_smartSteve_s4.v3.py)
 * 13-th place: 17 poppies, [Olasz, Zs. & Ignácz, M.](https://youtu.be/shMWqpyP8QU)
 
 ##### Red Flower Hell III.
@@ -209,13 +209,13 @@ Results
 23 Mar - 6 Apr
 
 Qualification limit: 25 poppies. The deadline for submission of the source code of your SF agent is 1 Apr. There will be online qualifiers followed by ~~offline~~ (online because coronavirus) finals at the spring school holidays. Until now the red flowers have always been placed to the same place.
-In the finals, the locations of the red flowers will be re-generated. (For example, try this mission XML file: [nb4tf4i_d_2.xml](nb4tf4i_d_2.xml) )
+In the finals, the locations of the red flowers will be re-generated. (For example, try this mission XML file: [nb4tf4i_d_2.xml](RFH0-3/nb4tf4i_d_2.xml) )
 
 How to participate? Comment the link of your YouTube video to the post:
 https://www.facebook.com/groups/udprog/permalink/1359276454260240/
 
 Qualification Results
-* [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](https://github.com/nbatfai/RedFlowerHell/blob/master/greenpill_s24_v3_RF28.py)
+* [initial hack](https://youtu.be/cfhh3llDoRo): 28 poppies, Bátfai, N., [source code available](RFH0-3/greenpill_s24_v3_RF28.py)
 * first place: 50 poppies, [Káplár, I. & Halász, D.](https://youtu.be/F3vZ432GOlg)
 * second place 48 poppies, [Kiss, K. & Hegedűs, P.](https://youtu.be/Cwj3s4-MFlg)
 * third place 44 poppies, [Hajdu, B. & Dávid, Gy.](https://youtu.be/L1YDl1GEdsY)
@@ -251,31 +251,48 @@ Final Results
 
 13 Apr - 8 May
 
-Qualification limit: ?? poppies. The deadline for submission of the source code of your SF agent is 8 May. In this round the full arena will be re-generated: not only the coords of the red flowers but also the walls of the hillside will change as it can be seen in the following figure.
+Mission XML files:
+* Hard League [nb4tf4i_d4_Rudolf_hard.xml](RFH4/nb4tf4i_d4_Rudolf_hard.xml)
+* Soft League [nb4tf4i_d4_Rudolf_soft.xml](RFH4/nb4tf4i_d4_Rudolf_soft.xml)
 
-![Red Flower Hell Arena 3](RFHarena3.png "Red Flower Hell Arena 3")
+Qualification limit: (hard: 5/soft: 9) poppies. The deadline for submission of the source code of your SF agent is 8 May. In this round the full arena will be re-generated: not only the coords of the red flowers but also the walls of the hillside will change as it can be seen in the following figure.
+
+![Red Flower Hell Arena 4](RFHarena3.png "Red Flower Hell Arena 4")
 [Rudolf](https://youtu.be/RShUsRJKIWI) has been chosen as the default arena for RFH IV.
 
 How to participate? Comment the link of your YouTube video to the post:
 https://www.facebook.com/groups/udprog/permalink/1380895935431625/
 
-HI Agents Results
+HI Agents Results (Human)
 * initial hack: -
 * current first place: -
 * current second place: -
 * current third place: -  
 
-Qualification Results
+Qualification Results (Hard)
+* [initial hack](https://youtu.be/ZTsXkMh3pqQ): 5 poppies, Bátfai, N. & Bátfai, N. B., [source code available](RFH4/nb4tf4i_red_flower_hell4_greenpill_agens_c_rf5.py)
+* current first place: -
+* current second place: -
+* current third place: -  
+
+Qualification Results (Soft)
 * initial hack: -
 * current first place: -
 * current second place: -
 * current third place: -  
 
-Final Results
+Final Results (Hard)
 * initial hack: -
 * current first place: -
 * current second place: -
 * current third place: -  
+
+Final Results (Soft)
+* initial hack: -
+* current first place: -
+* current second place: -
+* current third place: -  
+
 
 #### High-level programming languages II
 See AI agents
