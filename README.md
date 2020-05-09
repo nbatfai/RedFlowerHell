@@ -264,10 +264,17 @@ How to participate? Comment the link of your YouTube video to the post:
 https://www.facebook.com/groups/udprog/permalink/1380895935431625/
 
 HI Agents Results (Human)
-* initial hack: -
-* current first place: -
-* current second place: -
-* current third place: -  
+* initial hack: [Please use this source for measuring](https://github.com/nbatfai/RedFlowerHell/blob/master/RFH0-3/nb4tf4i_red_flower_hell4_greenpill_human.py)
+* current first place: 38 poppies, [Aranyi, Á.](https://youtu.be/NJrxqkqw2OU)
+* current second place: 36 poppies, [Zsabej, M.](https://youtu.be/c_NXSpkYN38), [Szabó, B.](https://youtu.be/GZZTJxY1U8k)
+* current third place: 34 poppies, [Szoboszlai, I.](https://youtu.be/enyH_GdOYS8)
+* 4-th place: 30 poppies, [Geszteredi, J.](https://youtu.be/czqNHVVnw00), [Gyulai, D.](https://youtu.be/dr89iDj6FPw)
+* 5-th place: 28 poppies, [Takács, B.](https://youtu.be/r23rHdnYF9o), [Tóth, F.](https://youtu.be/kdF-5dRbCDQ)
+* 6-th place: 27 poppies, [Bartha, Z.](https://youtu.be/RHoJiMmbnu4)
+* 7-th place: 26 poppies, [Kiss, D.](https://youtu.be/Mw7NZCEV2us)
+* 8-th place: 23 poppies, [Puskás, P.](https://youtu.be/m8i4U-Y4z30), [Vékony, O.](https://youtu.be/Yzmpkz-ahOs)
+* 9-th place: 22 poppies, [Tari, L.](https://youtu.be/lHBoGrAaJ9M)
+* 10-th place: 19 poppies, [Papp, Cs.](https://youtu.be/o6prMQCZcG4)
 
 Qualification Results (Hard)
 * [initial hack](https://youtu.be/ZTsXkMh3pqQ): 5 poppies, Bátfai, N. & Bátfai, N. B., [source code available](RFH4/nb4tf4i_red_flower_hell4_greenpill_agens_c_rf5.py)
