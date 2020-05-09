@@ -284,12 +284,13 @@ Qualification Results (Hard)
 * 4-th place: 8 poppies, [Szakács, Á. & Fiedler, N.](https://youtu.be/6YtfOEV7U54) (C++), [Tutor, T. & Czanik, A.](https://youtu.be/_21OkBUF-GU), [Aranyi, Á.](https://youtu.be/R5ZDImomRZ4) (C++)
 * 5-th place: 7 poppies, [Tóth, F.](https://youtu.be/A_BVE7Mf5Qc) (C++), [Tari, L., Naghi, P. & Sándor, M.](https://youtu.be/8sdaxf2_93A), [Brudnyák, B.](https://youtu.be/bjWw0Vzghvw) (Py), [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Wg-lFWiOy5M) (C++)
 * 6-th place: 6 poppies, [Bartha, Z.](https://youtu.be/ReQjdP3IC4w) (Py), [Barna, B.](https://youtu.be/MrZ3BgwDTQg)
-* 7-th place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/F74t6sZdrQ0) (Py), [Nagy, E. & Kusmiczki, B.](https://youtu.be/NMsT2TCfLDo), [Szoboszlai, I.](https://youtu.be/0RIWwGUGDH0), [Kovács, I.](https://youtu.be/e5EyzzD9PoM), [Szabó, P.](https://youtu.be/7IFqLEZNQvI), [Tóth, F.](https://youtu.be/D6qY-zmOKxw) (Py), [Veress, G. & Nyika, B.](https://youtu.be/BZ9lqMwtePs) (Py), [Hegedűs, P.](https://youtu.be/DUj6nNpaiug) (Py), [Sápi, G.](https://youtu.be/ilI5LQ5kWWE) (Py), [Orosz, R.](https://youtu.be/OkG1NRkzh1o), [Puskás, P.](https://youtu.be/Bnx00RwZ7HQ)
+* 7-th place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/F74t6sZdrQ0) (Py), [Nagy, E. & Kusmiczki, B.](https://youtu.be/NMsT2TCfLDo), [Szoboszlai, I.](https://youtu.be/0RIWwGUGDH0), [Kovács, I.](https://youtu.be/e5EyzzD9PoM), [Szabó, P.](https://youtu.be/7IFqLEZNQvI), [Tóth, F.](https://youtu.be/D6qY-zmOKxw) (Py), [Veress, G. & Nyika, B.](https://youtu.be/BZ9lqMwtePs) (Py), [Hegedűs, P.](https://youtu.be/DUj6nNpaiug) (Py), [Sápi, G.](https://youtu.be/ilI5LQ5kWWE) (Py), [Orosz, R.](https://youtu.be/OkG1NRkzh1o), [Puskás, P.](https://youtu.be/Bnx00RwZ7HQ), [Gyulai, D.](https://youtu.be/RLGkfOmlmbQ)
 
 
 Qualification Results (Soft)
-* first place: place: 9 poppies, [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Xf2T3NRswS0) (C++)
-* second place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
+* first place[Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
+* second place: 9 poppies, [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Xf2T3NRswS0) (C++)
+* third place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
 
 Final Results (Hard)
 * initial hack: -
