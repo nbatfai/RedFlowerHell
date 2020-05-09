@@ -278,15 +278,18 @@ HI Agents Results (Human)
 
 Qualification Results (Hard)
 * [initial hack](https://youtu.be/ZTsXkMh3pqQ): 5 poppies, Bátfai, N. & Bátfai, N. B., [source code available](RFH4/nb4tf4i_red_flower_hell4_greenpill_agens_c_rf5.py)
-* current first place: -
-* current second place: -
-* current third place: -  
+* first place: 14 poppies, [Osztós, Zs.](https://youtu.be/FkJUB-TIvb0)
+* second  place: 10 poppies, [Aranyi, Á.](https://youtu.be/IQJUw0Obyac) (Py)
+* third place: 9 poppies, [Tutor, T. & Czanik, A.](https://youtu.be/5wMRgiSBc7k) (Py)
+* 4-th place: 8 poppies, [Szakács, Á. & Fiedler, N.](https://youtu.be/6YtfOEV7U54) (C++), [Tutor, T. & Czanik, A.](https://youtu.be/_21OkBUF-GU), [Aranyi, Á.](https://youtu.be/R5ZDImomRZ4) (C++)
+* 5-th place: 7 poppies, [Tóth, F.](https://youtu.be/A_BVE7Mf5Qc) (C++), [Tari, L., Naghi, P. & Sándor, M.](https://youtu.be/8sdaxf2_93A), [Brudnyák, B.](https://youtu.be/bjWw0Vzghvw) (Py), [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Wg-lFWiOy5M) (C++)
+* 6-th place: 6 poppies, [Bartha, Z.](https://youtu.be/ReQjdP3IC4w) (Py), [Barna, B.](https://youtu.be/MrZ3BgwDTQg)
+* 7-th place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/F74t6sZdrQ0) (Py), [Nagy, E. & Kusmiczki, B.](https://youtu.be/NMsT2TCfLDo), [Szoboszlai, I.](https://youtu.be/0RIWwGUGDH0), [Kovács, I.](https://youtu.be/e5EyzzD9PoM), [Szabó, P.](https://youtu.be/7IFqLEZNQvI), [Tóth, F.](https://youtu.be/D6qY-zmOKxw) (Py), [Veress, G. & Nyika, B.](https://youtu.be/BZ9lqMwtePs) (Py), [Hegedűs, P.](https://youtu.be/DUj6nNpaiug) (Py), [Sápi, G.](https://youtu.be/ilI5LQ5kWWE) (Py), [Orosz, R.](https://youtu.be/OkG1NRkzh1o), [Puskás, P.](https://youtu.be/Bnx00RwZ7HQ)
+
 
 Qualification Results (Soft)
-* initial hack: -
-* current first place: -
-* current second place: -
-* current third place: -  
+* first place: place: 9 poppies, [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Xf2T3NRswS0) (C++)
+* second place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
 
 Final Results (Hard)
 * initial hack: -
@@ -333,4 +336,4 @@ ___
 Norbert Bátfai, PhD., University of Debrecen, IT Dept.,  batfai.norbert@inf.unideb.hu  
 [nb4tf4i](http://mine.ly/nb4tf4i.1)
 
-Last modified: Fri, 19 Apr 2020 15:17:00 GMT
+Last modified: Fri, 8 May 2020 11:59:00 GMT
