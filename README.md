@@ -290,7 +290,6 @@ Qualification Results (Hard)
 Qualification Results (Soft)
 * first place: 13 poppies, [Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
 * second place: 9 poppies, [Takács, B. Dávid Kiss, D. & Vékony, O.](https://youtu.be/Xf2T3NRswS0) (C++)
-* third place: 5 poppies, [Takács, B. & Vékony, O](https://youtu.be/k3YiFq0xWOg) (Py)
 
 Final Results (Hard)
 * initial hack: -
